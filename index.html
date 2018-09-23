@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aniversari Carme Blanch</title>
+
+  <meta name="author" content="Cristina Roige Gaja">
+  <meta name="keywords" content="HTML,CSS3,Galeria,JavaScript">
+  <meta name="description" content="Exercici HTML5 i CSS3">
+  <!-- link:css*2+link:favicon+script:src*4 -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- quan fem scroll es faci de manera animada   -->
+  <script src="js/scrollomatic.js"></script>
+  <!-- ajuda a que els navegadors que no entenguin html5 l'entenguin -->
+  <script src="js/modernizr.js"></script>
+  <!-- Extensions propietaries css -->
+  <script src="js/prefixfree.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a.scroll").scrollomatic();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1 class="animated  fadeInDown logo">Carme, 50 Anys!!!</h1>
+        <!--
+        <label for="show-menu" class="show-menu">Menu</label>
+        <input type="checkbox" id="show-menu" role="button">
+      -->
+      <nav>
+          <ul id="menu">
+            <li><a href="#inici" class="scroll" >Inici</a></li>
+            <li><a href="#temes" class="scroll" >Felicitats</a></li>
+            <li><a href="#felicitacions" class="scroll" >Veure Felicitacions</a></li>
+          </ul>
+      </nav>
+      
+  </header>
+
+
+  <main id="contingut">      
+    <section id="inici">
+      <div id="divImici">
+        <video id="video_background" autoplay loop preload="auto">
+          <source src="video/cb.mp4" type="video/mp4">
+          <source src="video/cb.ogv" type="video/ogv">
+          <source src="video/cb.webm" type="video/webm">
+          <p>El navegador no soporta el format de video</p>
+        </video>
+        <h2 id="missatge" class="animated rotateIn">Per molts anys, Carme!!!</h2>
+        <a href="#felicitacions">Veure felicitacions</a>
+        <div id="abaix"></div>
+      </div>
+    </section>
+    <section  id="temes">
+      <h2>Felicitats Carme!!!</h2>
+      <div id="temesFelicitacions">
+      <div id='fel1'>
+        <div id="fel_img1"></div>
+        <h2>MIQUEL MARTÍ I POL</h2>
+        <p> Tot envelleix i mor per renovar-se</p>
+        <p>i aquest inici de tardor confirma</p>
+        <p>la perfecta harmonia de les coses.</p>
+      </div>
+      <div id='fel2'>
+        <div id="fel_img2"></div>
+        <h2>PEP SALA</h2>
+        <p>Però no hem de mirar enrera</p>
+        <p>per poder sentir-nos bé,</p>
+        <p>no hem de mirar enrera</p>
+        <p>per saber tot el que hem fet.</p>
+      </div>
+      <div id='fel3'>
+        <div id="fel_img3"></div>
+        <h2>JOAN ISAAC</h2>
+        <p>I passa, passa el temps inexorable</p>
+        <p>com un cavall veloç i desbocat.</p>
+        <p>Que immens que es fa el passat, que curt és el futur!</p>
+        <p>I tot ho resumim en anar passant...</p>
+      </div>
+      </div>
+    </section>
+    <section id="felicitacions">
+      <h2>Ja en tens 50!!!</h2>
+
+      <div id="felicitacions_gent">
+        <div id="f_01" class="caixa">
+          <h3 class="autor">Albert</h3>
+          <img src="img/gent/albert.png" >
+          <p>Hola Carme, avui ets més gran que ahir i més jove que demà.</p><p> Benvinguda a la dècada dels 50.</p>
+        </div>
+        <div id="f_02" class="caixa">
+          <h3 class="autor">Miquel i Toni</h3>
+          <img src="img/gent/antonia_miquel_toni.png" >
+          <p>Els 50 anys són la joventut de l'edat madura DISFRUTE'LS!!.</p>
+        </div>
+        <div id="f_03" class="caixa">
+          <h3 class="autor">Joan i Anna</h3>
+          <img src="img/gent/ana_joan.png" >
+          <p>Carmeta,</p><p> al canvi de número. Això… que el 5 és un número “guai”.</p><p>  Esperem que els propers anys, sigui el teu número de la sort; i que en puguis  fer molts més.</p>
+        </div>
+        <div id="f_04" class="caixa">
+          <h3 class="autor">Lourdes i Pep</h3>
+          <img src="img/gent/lourdes_pep.png" >
+          <p>Hola Carme!!</p><p>Col·loca la teva mà esquerra sobre la teva espatlla dreta i la teva mà dreta sobre la teva espatlla esquerra.</p><p> Acabes de rebre una abraçada a distància de part nostre.</p>
+        </div>
+        <div id="f_05" class="caixa">
+          <h3 class="autor">M. Àngels</h3>
+          <img src="img/gent/m_angels_isalt.png" >
+          <p>Carme, moltes felicitats! Ja has arribat al mig segle.</p><p> Per molts anys i els millors desitjos per tu.</p><p> Gràcies per ser-hi sempre, un petonàs.</p>
+        </div>
+        <div id="f_06" class="caixa">
+          <h3 class="autor">Alfons, Maricel, Gerard i Clàudia</h3>
+          <img src="img/gent/alfons_maricel_gerard_claudia.png" >
+          <p>Moltes felicitats Carme!!! </p><p> La vida comença als 50,</p><p>el d’abans només eren pràctiques! </p>
+        </div>
+        <div id="f_07" class="caixa">
+          <h3 class="autor">Marta</h3>
+          <img src="img/gent/marta_pago.png" >
+          <p> Benvinguda al club dels 50!!!</p><p> De tot cor.</p>
+        </div>
+        <div id="f_08" class="caixa">
+          <h3 class="autor">Montse i Ximo</h3>
+          <img src="img/gent/montse_ximo.png" >
+          <p>Carme,</p><p> no són quants anys tens, sinó quants ens queden.. </p><p>s'ha de viure el moment, i desitgem tenir molts moments amb tu,</p><p> sempre, Ximo i Montse</p>
+        </div>
+        <div id="f_09" class="caixa">
+          <h3 class="autor">Rosa i Albert</h3>
+          <img src="img/gent/rosa_albert.png" >
+          <p>Gràcies per ser-hi sempre present sobretot en els moments difícils.</p><p> Les amigues són com les estrelles,</p><p> saps que hi són encara que no les vegis.</p><p>Per Molts Anys i que l'entrada als 50 et portin molta Sort i Felicitat!</p><p>Un petó i una abraçada molt gran!</p>
+        </div>
+        <div id="f_10" class="caixa">
+          <h3 class="autor">Carme i Jaume</h3>
+          <img src="img/gent/jaume_carme.png" >
+          <p>Hola Carme,</p><p> moltes felicitats i que puguis complir el doble dels que tens i que els puguis passar sempre en el mateix somriure i simpatia els teus amics que sempre et garanteix costat.</p>
+        </div>
+        <div id="f_11" class="caixa">
+          <h3 class="autor">M. Àngels</h3>
+          <img src="img/gent/m_angels.png" >
+          <p>Companya d'aventures, còmplice de riures i plors, sempre disponible en els bons moments i en els no tan bons, ment inquieta i cor valent.</p><p>Celebro que existeixis i que formis part de la meva vida.</p><p>Feliç aniversariiiiiii!!!</p>
+        </div>
+        <div id="f_12" class="caixa">
+          <h3 class="autor">Anna i Miquel </h3>
+          <img src="img/gent/anna_miquel.png" >
+          <p>Esperem que es compleixin tots els teus desitjos i que poguem compartir amb tu alguns d’aquests moments especials.</p><p>Per molts anys!!!</p>
+        </div>        
+        <div id="f_13" class="caixa">
+          <h3 class="autor">Ramona</h3>
+          <img src="img/gent/ramona.png" >
+          <p>La vida no es mesura en minuts sinó en moments, et desitjo de tot cor molts moments feliços en el teu 50 aniversari.</p><p>Moltes felicitats!</p>
+        </div>
+        <div id="f_14" class="caixa">
+          <h3 class="autor">Juncal, Joan</h3>
+          <img src="img/gent/joan_juncal.png" >
+          <p>Que els 50 que comencés siguin molt millor que els 50 que cumpleixes i que puguem seguir compartint tot allò que la vida ens ofereixi.</p>
+        </div>
+        <div id="f_15" class="caixa">
+          <h3 class="autor">Jana i Ona</h3>
+          <img src="img/gent/jana_ona.png" >
+          <p>Per molts anys Carme!!!</p>
+        </div>
+        <div id="f_16" class="caixa">
+          <h3 class="autor">Pep</h3>
+          <img src="img/gent/pep.png" >
+          <p>Un pasat per recordar un present per ser feliç i un futur per esperar per molts anys</p>
+        </div>
+        <div id="f_17" class="caixa">
+          <h3 class="autor">Susanna</h3>
+          <img src="img/gent/susana_n.png" >
+          <p>Carme, moltes  felicitats et  desitgem el millor. GRÀCIES PER LA TEVA AMISTAT</p>
+        </div>
+        <div id="f_18" class="caixa">
+          <h3 class="autor">Cristina</h3>
+          <img src="img/gent/cristina.png" >
+          <p>Per molts anys, </p><p>que en facis molts més i que ho poguem veure!!!</p>
+        </div>
+        <div id="f_19" class="caixa">
+          <h3 class="autor">Laia i Ivet</h3>
+          <img src="img/gent/laia_ivet.png" >
+          <p>Et desitgem: Que siguis feliç, 50 milions de somriures i que gaudeixis del que encara està per arribar. T'ho desitgem de tot cor.</p>
+        </div>
+        <div id="f_20" class="caixa">
+          <h3 class="autor">Joan</h3>
+          <img src="img/gent/joan_b.png" >
+          <p>Felicitats i per molts anys!!!</p>
+        </div>
+                
+      </div>
+      <a href="#contingut" class="amunt scroll"></a>
+    </section>
+       
+  </main>
+  
+  <section>
+      <footer><p>Copyright &copy; 2018 CRG. Gràcies a tots els que heu col·laborat.</p></footer>
+  </section> 
+  
+</body>
+</html>

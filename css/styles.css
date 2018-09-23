@@ -1,0 +1,925 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Merriweather:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+/*Estils generals*/
+*{
+  /*resetegem els marges que el navegador posa per defecte*/
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+/*Estils body*/
+body{
+  text-align: center;
+}
+
+main{
+  height: 100%;
+}
+
+section {
+  height: 100%;
+  padding: 4em 2em;
+  position: relative;
+  width: 100%;
+}
+/*
+header {
+  background-color: rgba(207,142,255,0.6);
+  height:50px;
+  padding: 1em 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}*/
+header{
+  left:0px;
+  top:0px;
+  height:100px;
+  background-color: rgba(207,142,255,0.6);
+  padding: 1em 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+header h1{  
+  background-color: rgba(207,142,255,0);
+  background-size: contain;
+  float: left;
+  font-family: 'Lobster', cursive;
+  height: 2.125rem; /*1 rem = 16px*/
+  margin-left: 1.85em; /**/
+  position: absolute;
+  top: -0.25rem;
+  width: 25%;
+}
+
+nav{
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 2.85em;
+  text-align: right;
+  width: 65%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  border-right: 0.03102em solid rgba(0,0,0,1);
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+
+ul li a{
+  color: rgba(0,0,0,1);
+  font-size: 0,95rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+ul li a:hover, ul li a:active {
+  color:rgba(153,24,124,1);
+}
+
+ul li:nth-last-of-type(1){
+  border-right: none;
+}
+
+#divImici{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+video{
+  bottom: 0;
+  left: 48%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 102%;
+  z-index: -1;
+}
+
+
+
+#inici h2{
+  color: rgba(255,252,206,1);
+  font-family: 'Lobster', cursive;
+  font-size: 5rem;
+  text-shadow: 5px 5px 5px rgba(0,0,0,1);
+  margin: 0;
+  position: relative;
+  text-transform: uppercase;
+  top:50%;
+}
+
+#inici a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color:rgba(0,0,0,1);
+  position: relative;
+  top: 55%;
+  background: linear-gradient(rgba(255,129,288,1), rgba(214,118,232,1));
+  border-radius: 25%;
+  display: block;
+  font-size: 1.1rem;
+  width: 14rem;
+  left: 50%;
+  padding: 0.85em 0;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+#inici #abaix {
+  background: url(../svg/abajo.svg);
+  display: block;
+  height: 3rem;
+  left: 50%;
+  opacity:  0;
+  position: relative;
+  top: 35%;
+  transform: translateX(-50%);
+  transition: all 350ms;
+  width: 3rem;
+  z-index: 1;
+}
+
+#inici a:hover + #abaix, #inici a:active + #abaix {
+  opacity: 0.5;
+  top: 60%;
+}
+
+/*temes*/
+#temes h2{
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+#temesFelicitacions{
+  position: absolute;
+  width: 100%;
+}
+
+#fel1{
+  float:left;
+  width: 33%;
+  height: 90%;
+  padding: 0.85em 0;
+}
+#fel2{
+ float: left;
+ width: 33%;
+ height: 90%;
+ padding: 0.85em 0;
+}
+#fel3{
+ float:left;
+ width: 33%;
+ height: 90%;
+ padding: 0.85em 0.85em;
+}
+
+#fel_img1{
+  background-image: url(../img/1.PNG);
+  height: 12rem;
+  width: 12rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 0.65em solid rgba(207,142,255,1);
+  margin: 1em auto 0.5em;
+}
+
+#fel_img2{
+  background-image: url(../img/2.PNG);
+  height: 12rem;
+  width: 12rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 0.65em solid rgba(207,142,255,1);
+  margin: 1em auto 0.5em;
+}
+
+#fel_img3{
+  background-image: url(../img/3.PNG);
+  height: 12rem;
+  width: 12rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 0.65em solid rgba(207,142,255,1);
+  margin: 1em auto 0.5em;
+}
+
+#fel1 h2{
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+}
+
+#fel2 h2{
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+}
+
+#fel3 h2{
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+}
+
+#fel1 p{
+  font-family: 'Merriweather', serif;
+  font-size: .95em;
+}
+
+#fel2 p{
+  font-family: 'Merriweather', serif;
+  font-size: .95em;
+}
+
+#fel3 p{
+  font-family: 'Merriweather', serif;
+  font-size: .95em;
+}
+/*felicitacions*/
+#felicitacions{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  position:relative;
+  clear:both;
+  float:none;
+}
+
+#felicitacions h2{
+  font-family: 'Lobster', cursive;
+  font-size: 3.5em;
+}
+
+.caixa {
+  width: 25%;
+  height: 500px;
+  color: rgba(0,0,0,1);
+  float:left;
+  padding: 1rem;
+}
+
+.caixa img{
+  height: 12rem;
+  width: 12rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20%;
+  border: 0.65em solid rgba(207,142,255,1);
+  margin: 0.5em auto 0.5em;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,.75);
+}
+
+.caixa h3{
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+}
+
+.caixa p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+/*tractament especials felicitacions*/
+
+#f_06 h3{
+  font-size: 1.2em;
+  position: relative;
+  top:20px;
+}
+
+#f_06 img{
+  position: relative;
+  top:25px;
+}
+
+#f_06 p{
+  position: relative;
+  top:40px;
+}
+footer{
+  left:0px;
+  bottom:0px;
+  height:50px;
+  background-color: rgba(207,142,255,0.6);
+  padding: 1em 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+footer p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0,0,0,1);
+  top: -0.25rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.amunt{
+ width: 3rem;
+ height: 3rem;
+ position: absolute;
+ background: url(../svg/arriba.svg);
+ right: 1em;
+ bottom: -110em;
+}
+
+@media only screen and (max-width: 1280px){
+  header{
+    background-color: rgba(207,142,255,1);    
+  }
+  header h1{  
+    width: 20%;
+  }
+
+  nav{
+    margin-right: 4.75em;
+    width: 65%;
+  }
+
+  ul li a{
+    font-size: 0,85rem;
+    font-weight: 450;
+    letter-spacing: 0.2rem;
+    padding: 0.45em .75em;
+  }
+  /*
+  #inici{
+    border:1px solid blue;
+  }
+  */
+
+  #divImici{
+    /*border: 1px solid red;*/
+    margin: -4em -2em;
+  }
+   
+  video{
+    top: 2em;
+    width: 107%;
+  }
+
+  #inici h2{
+    font-size: 5rem;
+    top:55%;
+  }
+
+  #inici a{
+    top: 60%;
+    border-radius: 25%;
+    font-size: 1.1rem;
+    width: 14rem;
+    left: 50%;
+    padding: 0.85em 0;
+    transform: translateX(-50%);
+  }
+
+  #inici a:hover + #abaix, #inici a:active + #abaix {
+    top: 65%;
+  }
+  
+  .caixa {
+    height: 500px;
+  }
+  #fel3 {
+    padding: 0.85em 2.85em;
+  }
+  /*tractament especials per les felicitacions*/
+  #f_08 h3, #f_10 h3{
+    font-size: 1.2em;
+    position: relative;
+    top:20px;
+  }
+
+  #f_08 img, #f_10 img{
+    position: relative;
+    top:25px;
+  }
+
+  #f_08 p, #f_10 p {
+    position: relative;
+    top:40px;
+  }
+
+  #f_09, #f_10, #f_11, #f_12{
+    height: 600px;
+  }
+  
+  footer{
+    background-color: rgba(207,142,255,1);
+  }
+}
+
+@media only screen and (max-width: 1166px){
+  header h1{  
+    width: 30%;
+  }
+
+  .amunt{
+    bottom: -122em;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  section{
+    padding:4em 0em;
+  }
+  header{
+    background-color: rgba(207,142,255,1); 
+    height:70px; 
+  }
+  header h1{  
+    width: 30%;
+    font-size: 1.5em;
+    margin-left: -1em;
+  }
+
+  nav{
+    margin-right: 4.75em;
+    width: 65%;
+  }
+
+  ul li a{
+    font-size: 14px;
+    font-weight: 450;
+    letter-spacing: 0.1rem;
+    padding: 0.45em .75em;
+  }
+   
+  video{
+    top: -1em;
+    width: 114%;
+    height: 106%;
+  }
+
+  #inici h2{
+    font-size: 3rem;
+    top:55%;
+  }
+
+  #inici a{
+    top: 60%;
+    border-radius: 25%;
+    font-size: 1.1rem;
+    width: 13rem;
+    left: 50%;
+    padding: 0.85em 0;
+    transform: translateX(-50%);
+  }
+
+  #inici a:hover + #abaix, #inici a:active + #abaix {
+    top: 65%;
+  }
+  
+  /*temes*/
+#temes h2{
+  font-size: 2em;
+}
+
+#fel_img1{
+  height: 10rem;
+  width: 10rem;
+}
+
+#fel_img2{
+  height: 10rem;
+  width: 10rem;
+}
+
+#fel_img3{
+  height: 10rem;
+  width: 10rem;
+}
+
+#fel1 h2{
+  font-size: 1.5em;
+}
+
+#fel2 h2{
+  font-size: 1.5em;
+}
+
+#fel3 h2{
+  font-size: 1.5em;
+}
+
+#fel1 p{
+  font-size: .85em;
+  padding: -8px;
+}
+
+#fel2 p{
+  font-size: .85em;
+  padding: -8px;
+}
+
+#fel3 p{
+  font-size: .85em;
+  margin: 0px;
+}
+/*felicitacions*/
+  .caixa {
+    height: 550px;
+  }
+  
+  .amunt{
+    bottom: -137em;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  video{
+    top: -2em;
+    width: 125%;
+    height: 110%;
+  }
+
+  #f_09, #f_10, #f_11, #f_12{
+    height: 650px;
+  }
+
+  #felicitacions h3{
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 801px){
+  video{
+    visibility: hidden;
+  }
+
+  #inici{
+    background-image: url(../img/fonsv.png);
+    background-size: cover;
+    background-position: center;
+    width: 105%;
+    padding: 0em 0em;
+  }
+
+  .caixa {
+  width: 50%;
+  height: 500px;
+  color: rgba(0,0,0,1);
+  float:left;
+  padding: 1rem;
+}
+
+.caixa img{
+  height: 12rem;
+  width: 12rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20%;
+  border: 0.65em solid rgba(207,142,255,1);
+  margin: 0.5em auto 0.5em;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,.75);
+}
+
+.caixa h3{
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+}
+
+.caixa p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+/*tractament especials felicitacions*/
+
+#f_06 h3{
+  font-size: 1.2em;
+  position: relative;
+  top:20px;
+}
+
+#f_06 img{
+  position: relative;
+  top:25px;
+}
+
+#f_06 p{
+  position: relative;
+  top:40px;
+}
+
+.amunt{
+    bottom: -260em;
+  }
+
+  footer p{
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width: 736px){
+  header{
+    height:50px;
+  }
+  header h1{  
+    width: 25%;
+    font-size: 1em;
+  }
+
+  nav{
+    margin-right: 4.75em;
+    width:75%;
+  }
+
+  ul li a{
+    font-size: 10px;
+    font-weight: 450;
+    letter-spacing: 0.1rem;
+    padding: 0.45em .75em;
+  }
+  /*
+  #inici{
+    border:1px solid blue;
+  }
+  */
+
+  #divImici{
+    /*border: 1px solid red;*/
+    margin: -4em -2em;
+  }
+  
+
+  #inici h2{
+    font-size: 2rem;
+    top:55%;
+  }
+
+  #inici a{
+    font-size: .75rem;
+    width: 10rem;
+    padding: 0.85em 0;
+  }
+
+  #inici a:hover + #abaix, #inici a:active + #abaix {
+    top: 65%;
+  }
+  
+  #temes h2{
+    font-size: 1.05em;
+  }
+
+
+#fel1{
+  float:left;
+  width: 33%;
+  height: 90%;
+  padding: inherit;
+}
+#fel2{
+ float: left;
+ width: 33%;
+ height: 90%;
+ padding: 0;
+}
+#fel3{
+ float:left;
+ width: 33%;
+ height: 90%;
+ padding: 0;
+}
+
+#fel_img1{
+  height: 5rem;
+  width: 5rem;
+  border: 0.25em solid rgba(207,142,255,1);
+}
+
+#fel_img2{
+  height: 5rem;
+  width: 5rem;
+  border: 0.25em solid rgba(207,142,255,1);
+}
+
+#fel_img3{
+  height: 5rem;
+  width: 5rem;
+  border: 0.25em solid rgba(207,142,255,1);
+}
+
+#fel1 h2{
+  font-size: 1em;
+}
+
+#fel2 h2{
+  font-size: 1em;
+}
+
+#fel3 h2{
+  font-size: 1em;
+}
+
+#fel1 p{
+  font-size: .5em;
+}
+
+#fel2 p{
+  font-size: .5em;
+}
+
+#fel3 p{
+  font-size: .5em;
+}
+  
+  footer{
+    background-color: rgba(207,142,255,1);
+  }
+}
+
+@media only screen and (max-width: 736px){
+  header{
+    height:30px;
+  }
+  header h1{  
+    width: 25%;
+    font-size: 1em;
+  }
+
+  nav{
+    margin-top: -10px;
+    padding: 0;
+    width:65%;
+  }
+
+nav ul {
+  list-style-type: none;
+  
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+  border-right: 0.03102em solid rgba(0,0,0,1);
+  display: inline-block;
+  
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+  color: rgba(0,0,0,1);
+  font-size: 0,95rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+    margin: 0;
+    padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 1s;
+}
+#temes{
+  padding: 2em 0em;
+}
+
+}
+
+/*
+@media only screen and (max-width: 640px){
+  header{
+    height:30px;
+  }
+  header h1{  
+    width: 25%;
+    font-size: 1em;
+  }
+
+  nav{
+    margin-top: -10px;
+    padding: 0;
+    width:65%;
+  }
+
+nav ul {
+  list-style-type: none;
+  
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+  border-right: 0.03102em solid rgba(0,0,0,1);
+  display: inline-block;
+  
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+  color: rgba(0,0,0,1);
+  font-size: 0,95rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+    margin: 0;
+    padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 1s;
+}
+#temes{
+  padding: 2em 0em;
+}
+
+}
+*/
+
+@media only screen and (max-width: 640px){
+  section {
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  header{
+    height:40px;
+    width: 100%;
+    position: fixed;
+  }
+
+  header h1{
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+    position: fixed;
+    top: 30px;
+    transform: translateX(-20%);
+  }
+
+  ul li a{
+    font-size: .55em;
+  }
+
+  /*TEMES*/
+  #temesFelicitacions{
+    position: relative;
+  }
+
+  #temesFelicitacions div{
+    width: 100%;
+  }
+
+  #temesFelicitacions div div{
+    height: 12rem;
+    width: 12rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 0.65em solid rgba(207,142,255,1);
+    margin: 1em auto 0.5em;
+  }
+
+  #felicitacions_gent{
+    position: relative;
+  }
+
+  #felicitacions_gent div{
+    position: left;
+    width: 100%;
+    height: 100%;
+  }
+
+  .amunt{
+    bottom: -490em;
+  }
+
+  #felicitacions_gent div:nth-last-of-type(1){
+    height: 110%;
+  }
+}
+
+@media only screen and (max-width: 415px){
+  #inici h2{
+    font-size: 1.5rem;
+    left: 10%;
+  }
+}
+
